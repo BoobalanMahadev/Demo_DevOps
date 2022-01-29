@@ -3,7 +3,7 @@ node
 {
 
 	stage('Source CheckOut')
-    	{
+    {
 		SourceCheckout("https://github.com/mahendran-indiabees/Demo_DevOps.git","master","GitToken")
 	}
 	stage('Maven Build')
