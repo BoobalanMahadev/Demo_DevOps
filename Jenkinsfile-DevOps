@@ -1,0 +1,10 @@
+@Library('DevOps_Library@master') _
+node
+{
+
+	stage('GitCheckout')
+    {
+		SourceCheckout("https://github.com/mahendran-indiabees/Demo_DevOps.git","master")
+	}
+	
+}
