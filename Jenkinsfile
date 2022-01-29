@@ -10,7 +10,7 @@ node
 	{
 		BuildMaven("clean install")
 	}
-	Stage('Upload Artifact')
+	stage('Upload Artifact')
 	{
 		UploadArtifacts("war","Demo.war","demo","com.mydemo","nexus_cred","Build-Snapshots")
 	}
