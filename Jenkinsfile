@@ -12,7 +12,7 @@ node
 	}
 	stage('Upload Artifact')
 	{
-		UploadArtifacts("war","Demo.war","demo","com.mydemo","nexus_cred","Build-Snapshots")
+		UploadArtifacts("war","target\Demo.war","demo","com.mydemo","nexus_cred","Build-Snapshots")
 	}
 	
 }
