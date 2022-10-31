@@ -1,0 +1,15 @@
+node
+{
+
+env.CUSTOM_TAG_NAME="2.00-Murali"
+
+emailext body: '''
+Hi Team,</br>
+</br>
+</br>Custom Name : ${ENV, var="CUSTOM_TAG_NAME"}
+</br>
+</br>
+
+''', mimeType:'html',subject: '[ $JOB_NAME ]#BuildNumber : $BUILD_NUMBER #Status : $BUILD_STATUS', to: 'youmail'
+
+}
