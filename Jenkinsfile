@@ -1,11 +1,11 @@
 @Library('DevOps_Library@master') _
 node
 {
-        myfirstcode("Hello World")
-	//stage('Source CheckOut')
-        //{
-	//	SourceCheckout("https://github.com/mahendran-indiabees/Demo_DevOps.git","master","GitToken")
-	//}
+        //myfirstcode("Hello World")
+	stage('Source CheckOut')
+        {
+		SourceCheckout("https://github.com/mahendran-indiabees/Demo_DevOps.git","master","GitToken")
+	}
 	//stage('Maven Build')
 	//{
 	//	BuildMaven("clean install")
