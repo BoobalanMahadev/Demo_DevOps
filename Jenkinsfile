@@ -1,15 +1,15 @@
 @Library('DevOps_Library@master') _
 node
 {
-        myfirstcode("Hello World")
-	//stage('Source CheckOut')
-        //{
-	//	SourceCheckout("https://github.com/BoobalanMahadev/Demo_DevOps.git","master","GitToken")
-	//}
-	//stage('Maven Build')
-	//{
-	//	BuildMaven("clean install")
-	//}
+        //myfirstcode("Hello World")
+	stage('Source CheckOut')
+        {
+		SourceCheckout("https://github.com/BoobalanMahadev/Demo_DevOps.git","master","GitToken")
+	}
+	stage('Maven Build')
+	{
+		BuildMaven("clean install")
+	}
 	//stage('Upload Artifact')
 	//{
 		//UploadArtifacts("war","target/Demo.war","demo","com.mydemo","nexus_cred","Build-Snapshots","${BUILD_NUMBER}-SNAPSHOT")
